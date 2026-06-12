@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP 사업화 중개 플랫폼 - Process</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: '#0A2540', secondary: '#00FF66', textMain: '#1A1A1A', bgMain: '#FFFFFF' }
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-bgMain text-textMain font-sans flex flex-col min-h-screen">
+    <header class="bg-white shadow-sm border-b border-gray-200">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-bold text-primary">IP Brokerage</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="service.html" class="text-sm font-semibold hover:text-primary transition-colors">For Customers</a>
+                <a href="problem.html" class="text-sm font-semibold hover:text-primary transition-colors">For Providers</a>
+                <a href="how-it-works.html" class="text-sm font-semibold text-primary transition-colors">Process</a>
+                <a href="use-cases.html" class="text-sm font-semibold hover:text-primary transition-colors">Trust & Safety</a>
+                <a href="pricing.html" class="text-sm font-semibold hover:text-primary transition-colors">Pricing</a>
+            </div>
+            <a href="contact.html" class="hidden md:inline-flex bg-secondary text-primary font-bold px-5 py-2.5 rounded hover:bg-green-400 transition">베타 테스터 신청</a>
+            <button id="mobile-menu-btn" class="md:hidden p-2 text-primary focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-50 border-t border-gray-100">
+            <a href="service.html" class="block px-6 py-3 border-b border-gray-100 font-medium">For Customers</a>
+            <a href="problem.html" class="block px-6 py-3 border-b border-gray-100 font-medium">For Providers</a>
+            <a href="how-it-works.html" class="block px-6 py-3 border-b border-gray-100 font-medium text-primary">Process</a>
+            <a href="use-cases.html" class="block px-6 py-3 border-b border-gray-100 font-medium">Trust & Safety</a>
+            <a href="pricing.html" class="block px-6 py-3 border-b border-gray-100 font-medium">Pricing</a>
+            <a href="contact.html" class="block px-6 py-4 bg-secondary text-primary font-bold text-center">베타 테스터 신청</a>
+        </div>
+    </header>
+    <main class="flex-grow">
+        <section class="bg-white py-20 text-center border-b border-gray-200">
+            <div class="max-w-4xl mx-auto px-4">
+                <h1 class="hero-title mb-6">아이디어가 가치 있는 자산이 되기까지의 4단계 여정</h1>
+                <p class="text-lg text-gray-600">AI의 신속함과 변리사의 정교함, 그리고 마켓의 비즈니스 기회를 정렬했습니다.</p>
+            </div>
+        </section>
+        <section class="py-6 bg-red-50 text-red-700 text-center border-b border-red-100">
+            <p class="text-sm font-medium">현재 해당 프로세스는 선발된 초기 베타 테스터 그룹을 대상으로 파일럿 운영 중입니다.</p>
+        </section>
+        <section class="py-20 max-w-5xl mx-auto px-4">
+            <div class="space-y-12">
+                <div class="flex flex-col md:flex-row gap-6 items-start bg-gray-50 p-8 rounded-lg border border-gray-200">
+                    <div class="bg-primary text-secondary font-bold text-2xl w-16 h-16 flex items-center justify-center rounded-full shrink-0">01</div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-primary">아이디어 입력 및 외부 AI Agent 초안 작성</h3>
+                        <p class="text-gray-600">명세서 및 청구항 자동 추출을 통해 기초 데이터를 확보합니다.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row gap-6 items-start bg-white p-8 rounded-lg border-2 border-primary shadow-sm">
+                    <div class="bg-primary text-secondary font-bold text-2xl w-16 h-16 flex items-center justify-center rounded-full shrink-0">02</div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-primary">전문 파트너 변리사 1:1 매칭</h3>
+                        <p class="text-gray-600 mb-2">권리 범위 튜닝 및 법적 출원 진행 연계</p>
+                        <div class="bg-gray-100 p-4 rounded text-sm text-gray-700">플랫폼은 직접 출원 대리를 하지 않습니다. AI가 생성한 초안을 토대로, 공식 매칭된 등록 변리사가 독립적인 계약 관계 하에 안전하고 전문적인 출원 업무를 대행합니다.</div>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row gap-6 items-start bg-gray-50 p-8 rounded-lg border border-gray-200">
+                    <div class="bg-primary text-secondary font-bold text-2xl w-16 h-16 flex items-center justify-center rounded-full shrink-0">03</div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-primary">IP 사업화 패키지 빌딩</h3>
+                        <p class="text-gray-600">IP 요약서, 기술소개서 및 크라우드펀딩 자료 자동 변환</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row gap-6 items-start bg-gray-50 p-8 rounded-lg border border-gray-200">
+                    <div class="bg-primary text-secondary font-bold text-2xl w-16 h-16 flex items-center justify-center rounded-full shrink-0">04</div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-primary">거래/펀딩 마켓 플레이스 업로드</h3>
+                        <p class="text-gray-600">공급물 확보 및 매칭, 제안가 입찰 거래 진행</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-primary text-white py-12 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-400 text-sm mb-4">본 플랫폼은 변리사법을 준수하며, 직접 출원 대리를 하지 않고 'AI 초안 작성 지원' 및 '등록 변리사 1:1 계약 연계 및 거래 중개' 역할만 수행합니다.</p>
+            <p class="text-gray-400 text-sm">© 2024 IP Brokerage. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
